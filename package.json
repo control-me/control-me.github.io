@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "ci:prod": "./scripts/ci/prod.sh"
   },
   "dependencies": {
     "preact": "^10.5.13"
