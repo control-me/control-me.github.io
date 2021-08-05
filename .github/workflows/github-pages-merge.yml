@@ -17,4 +17,5 @@ jobs:
           coauthor_email: 'mate.homolya@gmail.com'
           coauthor_name: 'Máté Homolya'
           branch: 'master'
+          directory: 'dist'
 
