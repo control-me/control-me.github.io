@@ -8,9 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: 'npm run ci:prod'
+      - name: Production CI
+        run: 'npm run ci:prod'
       - uses: actions-js/push@master
-      - with:
+        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
           coauthor_email: 'mate.homolya@gmail.com'
