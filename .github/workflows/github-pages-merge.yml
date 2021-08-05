@@ -9,3 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: 'npm run ci:prod'
+      - name: Commit & Push changes
+      - uses: actions-js/push@master
+      - with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+          coauthor_email: 'mate.homolya@gmail.com'
+          coauthor_name: 'Máté Homolya'
+          branch: 'master'
+
