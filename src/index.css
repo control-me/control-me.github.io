@@ -2,21 +2,26 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* CSS selecors for text elements */
-
+:root {
+  @apply bg-background;
+}
 
 h1 {
   @apply text-4xl font-medium leading-[5rem];
-  @apply border-b border-gray-300 mb-2;
+  @apply border-b border-gray-300 dark:border-gray-700 mb-2;
 }
 
 h2 {
   @apply text-3xl font-medium leading-[4rem];
-  @apply border-b border-gray-300 mb-2;
+  @apply border-b border-gray-300 dark:border-gray-700 mb-2;
 }
 
 h3 {
-  @apply text-2xl font-medium;
+  @apply text-2xl font-medium leading-[3rem];
+}
+
+h4 {
+  @apply text-xl font-medium leading-[2rem];
 }
 
 ol {
@@ -32,5 +37,45 @@ pre code {
 }
 
 a {
-  @apply text-brand-700 hover:underline;
+  @apply text-brand-700 dark:text-brand-300 hover:underline;
+}
+
+blockquote {
+  @apply bg-brand-50 rounded-lg p-2 sm:p-4 my-2 text-brand-800 dark:bg-brand-900 dark:bg-opacity-25 dark:text-brand-200;
+}
+
+blockquote a {
+  @apply text-black dark:text-white;
+}
+
+img {
+  @apply rounded-lg my-2;
+}
+
+.logo {
+  --shadow-offset: 1;
+  --shadow-blur: 0;
+  --scale: 1;
+  @apply cursor-pointer;
+  transition: all 150ms ease;
+  transform: translate( calc(var(--shadow-offset, 1) * 1px),  calc(var(--shadow-offset, 1) * -1px)) scale(var(--scale));
+  filter: drop-shadow(rgba(0, 0, 0, 0.12) calc(var(--shadow-offset, 1) * -1px) calc(var(--shadow-offset, 1) * 1px) calc(var(--shadow-blur, 0) * 1px));
+}
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: drop-shadow(rgba(255, 255, 255, 0.24) calc(var(--shadow-offset, 1) * -1px) calc(var(--shadow-offset, 1) * 1px) calc(var(--shadow-blur, 0) * 1px));
+  }
+}
+hr {
+  @apply border-gray-300 dark:border-gray-700;
+}
+.logo:hover {
+  --shadow-offset: 3;
+  --shadow-blur: 1.5;
+  --scale: 1.04;
+}
+.logo:active {
+  --shadow-offset: 1;
+  --shadow-blur: 0;
+  --scale: 1;
 }

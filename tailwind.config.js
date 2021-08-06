@@ -5,7 +5,7 @@ module.exports = {
     "**/*.tsx",
     "**/*.ts",
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       // colors
@@ -22,6 +22,8 @@ module.exports = {
           800: "#0079b1",
           900: "#005a92",
         },
+        background: "var(--background)",
+        surface: "var(--surface)",
       }
     },
   },

@@ -1,3 +1,11 @@
+---
+title: "Docs: Server rendering - ControlMe"
+tags:
+  - "docs"
+  - "server"
+  - "rendering"
+---
+
 ## Commands
 
 ```bash

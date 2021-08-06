@@ -1,6 +1,21 @@
 # Page Templates
 
-The entrie application UI can be made up of modular components, that are dynamically templated with each other in a serializable format. (list of blocks and attributes).
+The entrie application UI can be made up of modular components, that are dynamically templated with each other in a serializable format. (list of blocks and attributes). A template is a piece of data that contains a list of blocks and attributes, and is serialized to a string. Format may be markdown, html, or any other format that can be converted to a string. In HTML, blocks are called `div`s, and attributes are called `class`s. In markdown, they are called `header`s and `paragraph`s. Some formats are harder to master than others, the easiest being markdown.
+
+## Blocks
+Commonly referred to as `components` or `markup`. A block is a piece of data that can be rendered to a string or a DOM element.
+Modular architecture is a good way to break up the UI into smaller pieces, so that the UI can be changed without having to modify the underlying component library.
+This is a rather important way of thinking about the application. Everything is a block, and every block has a set of attributes.
+Blocks can be nested, depending on the structure of the UI. Pages are the most basic block, and they are the only block that can be serialized and published to a URL on the web.
+Clienside logic such as interactivity are pushed to a package `@controlme/ui-controls` that is loaded as a dependency during the build process of a static site. These controls (a.k.a. components) are then used to dynamically render the UI.
+Parse errors and validation errors are reported during the build process, and interactivity is pushed to the client as a set of controls from a package `@controlme/ui-controls` and other third party packages, UI libraries, etc.
+
+## Forms
+
+Sometimes forms are still necesary, and they are not nested. They are not part of the UI, they are part of the application logic. In other words, they will change as the application logic changes.
+
+Therefore, it's best to avoid using forms in the UI since it serves administrative purposes, and 
+admins should learn markdown and HTML if they want to write a UI. For less advanced users, forms are a good way to create a UI that is not too complex.
 
 ## Page metadata
 ### AMP - Article metadata

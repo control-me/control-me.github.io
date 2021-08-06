@@ -1,8 +1,12 @@
+---
+title: "Docs: Internationalization - ControlMe"
+---
+
 # Internationalization
 
 ## Translation guide
 
-> **Note:** See [translation guide](./translation.md) for step-by-step instructions on how to translate the documentation, application and website.
+> **Note:** See [translation guide](./translation) for step-by-step instructions on how to translate the documentation, application and website.
 
 ## Translation process
 Transifex, Localizely, Lokalise are great translation tools, but they are not perfect. Either too complex or too simple.

@@ -1,9 +1,12 @@
+---
+title: "Docs: Questions - ControlMe"
+---
+
 ## Question datatype
 
-two type of multifunctional ratings:
+Two type of multifunctional ratings:
 - rating all options is required 
 - is not required, which means you can rate however many options you want, and you don't have to not rate all options
-
 
 Question type: rating or choice
 Question required: true or false

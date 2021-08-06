@@ -5,7 +5,7 @@ This routing strategy should be statically rendered and have a good performance 
 
 Todo: Redirect to `www` subdomain firebase hosting rule.
 
-Short URL: `link.controlme.app/shortid`
+Short URL: `controlme.link/shortid`
 Will send a `302 Found` HTTP response with `Location: https://www.controlme.app/page-title-slug-tags-20CharacterUIDxxxxxx`
 Will render a static preact bundle based on when the editor content was last published. This is a CI process that is triggered from the web UI that works kind of like Vercel CLI.
 
@@ -17,10 +17,25 @@ Process stages:
 2. Page content is built with Preact CLI in a CI process.
 3. Page is deployed to the following production urls: 
    - Page url: `https://www.controlme.app/page-title-slug-tags-20CharacterUIDxxxxxx` 
-   - Short url: `link.controlme.app/shortid` http response `304 Found` to page url.
+   - Short url: `controlme.link/shortid` http response `304 Found` to page url.
    - QR code static image url `https://lh3.googleusercontent.com/FileMd5Hashxxxx...` + Image metadata
 
 Backend will handle heavy tasks on the edge in a CloudFlare worker or Cloud function. Frontend will handle rendering the HTML, CSS and JavaScript, and load any assets, including running shaders on the GPU. It is responsible for user interaction but not responsible for rendering the webpage to html. The preact framework allows for rendering on the sever sider (SSR).
+
+# Landing page buzzwords
+
+### Continuous CI
+GitHub Actions for continuous, on-demand deployment. The CI scripts are improved on demand, depending on business needs. Deploy a static site to hosting on edge for a high performance website. 
+
+### Link to any resource in your cloud
+Your data is never shared across the network. You can securely start a CI process from the editor which will build and deploy a site with static content.
+When you make an edit and publish it, the site is rebuilt in a similar way. A unique URL will be created on https://controlme.link
+
+### Use the power of templates
+Quickly browse through large amount of content and iterate on ideas. The tool works offline, allows for speed and quick changes, since data is not uploaded to the internet until it's ready to publish. Use liquid tags to insert a view or a form for any datatype.
+
+## QR and NFC Interactive lab
+Build new content rapidly using open source code from npm and github
 
 # Landing page content
 The content of the landing page on controlme.cz

@@ -1,3 +1,7 @@
+---
+title: "Docs: Principles - ControlMe"
+---
+
 ## Introduction
 One liner:
 > “Quick and interactive rating”
@@ -6,10 +10,11 @@ Process should takes a few seconds and the user receives a reward for the respon
 The current features and customization of campaings also allows for control, quick and interactive survey / feedback, gathering contacts for marketing
 
 We are based on these principles:
-1) simplicity
-2) speed
-3) interactivity
-4) motivation for reaction
+
+> ### 1) simplicity
+> ### 2) speed
+> ### 3) interactivity
+> ### 4) motivation for reaction
 
 Segments:
 From small companies to huge franchises such as gastronomy, retail stores, accommodation, social events, manufacturing companies (for test products and get feedback), public events etc.
@@ -39,7 +44,7 @@ Both of these types of settings are based on business logic, because some only w
 ### Campaign rewards
 A campaign has one or many rewards. The user can choose a reward based on a set of rules set up in the campaign.
 
-### Additional condiderations
+### Additional considerations
 1) Response frequency limitation:
 - only once
 - daily

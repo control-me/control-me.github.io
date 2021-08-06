@@ -7,7 +7,23 @@ pre code {
   color: #D4D4D4;
   font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   line-height: 1.5;
-  border: 1px solid #ccc;
   padding: 1rem;
   font-size: 12px;
+  overflow: scroll;
+  @apply border border-gray-300 dark:border-gray-700;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  font-size: 85% !important;
+  margin: 0;
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  padding: .2em .4em;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
 }

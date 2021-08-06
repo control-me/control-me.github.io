@@ -1,7 +1,11 @@
+---
+title: "Docs: Translation - ControlMe"
+---
+
 # Translation guide
 
-> **Note:** Edit translations in AirTable at
-[https://airtable.com/shrINH7Z5NGsoOgiZ](https://airtable.com/shrINH7Z5NGsoOgiZ).
+> **Edit translations:**
+[https://airtable.com/tblWpIprrPFJQfCv2](https://airtable.com/tblWpIprrPFJQfCv2)
 
 ## Introduction
 The translation guide is a document that describes how to translate messages.
