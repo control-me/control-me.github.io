@@ -11,6 +11,9 @@ npm ci
 # build
 npm run build
 
+# copy docs to dist
+cp -r docs dist
+
 # navigate into the build output directory
 cd dist
 git init
