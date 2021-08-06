@@ -17,5 +17,8 @@
     "jsxFactory": "h",
     "jsxFragmentFactory": "Fragment"
   },
+  "files": [
+    "src/types.d.ts",
+  ],
   "include": ["src"]
 }

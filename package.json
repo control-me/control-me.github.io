@@ -8,11 +8,20 @@
     "ci:prod": "./scripts/ci.prod.sh"
   },
   "dependencies": {
-    "preact": "^10.5.13"
+    "highlight.js": "^11.2.0",
+    "linkify-it": "^3.0.2",
+    "markdown-it": "^12.2.0",
+    "preact": "^10.5.13",
+    "preact-markup": "^2.1.1",
+    "preact-router": "^3.2.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.0.0",
+    "@types/markdown-it": "^12.0.3",
+    "autoprefixer": "^10.3.1",
+    "tailwindcss": "^2.2.7",
     "typescript": "^4.3.2",
-    "vite": "^2.4.4"
+    "vite": "^2.4.4",
+    "vite-plugin-markdown": "^2.0.2"
   }
 }
