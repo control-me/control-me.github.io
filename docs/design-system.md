@@ -8,7 +8,7 @@ title: "Docs: Design system - ControlMe"
 
 ## What is a design system?
 
-A Design System is not a Design System without reusable, ready-to-use code. Having pre-built components made of CSS, HTML and JS that developers can use and instantly be in compliance with the Design System is crucial, both for speed of delivery and consistency in user experience. The technology we chose to become the foundation of the Design System, Meridian, was critical to the success of the system.
+A Design System is not a Design System without reusable, ready-to-use code. Having pre-built components made of CSS, HTML and JS that developers can use and instantly be in compliance with the Design System is crucial, both for speed of delivery and consistency in user experience. The technology we chose to become the foundation of the Design System, Tailwind CSS, was critical to the success of the system.
 Here is a three-step approach to choosing the technology:
 - Audit the organization’s technology needs
 - Research the options
@@ -23,12 +23,12 @@ Interactive components are often used to build a user interface.
 
 ## What is a design pattern?
 
-A design pattern is a general solution to a commonly occurring problem within a given context. UX patterns are a set of solutions to problems that occur in software development. Responsive design patterns in web design, interaction patterns for user interaction, and so on. DX (Developer Experience) patterns occur in the design and engineering of digital products.
+A design pattern is a general solution to a commonly occurring problem within a given context. UX patterns are a set of solutions to problems that occur in software development. Responsive design patterns in web design, interaction patterns for user interaction, and so on. DX (Developer Experience) patterns occur in the design and engineering of digital products. For software, it means a good IDE, a good build system, and so on.
 
 # ControlMe Design System
 
 The Tailwind CSS framework is used to build the ControlMe Design System. 
-Read more on [Tailwind CSS](https://tailwindcss.com/).
+Read more on [Tailwind CSS](https://tailwindcss.com/) and [Tailwind UI](https://tailwindui.com/) for templates to get started.
 
 ## Primary color palette
 

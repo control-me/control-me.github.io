@@ -1,5 +1,6 @@
 import { useEffect } from "preact/hooks";
 import Router from "preact-router";
+import * as Milestone1 from "../docs/milestone-1.md";
 import * as Accounts from "../docs/accounts.md";
 import * as Landing from "../docs/landing.md";
 import * as Readme from "../docs/readme.md";
@@ -10,6 +11,7 @@ import * as DesignSystem from "../docs/design-system.md";
 import * as PageTemplates from "../docs/page-templates.md";
 import * as Internationalization from "../docs/internationalization.md";
 import * as Translation from "../docs/translation.md";
+import * as ServerRendering from "../docs/server-rendering.md";
 import * as Palette from "../docs/palette.md";
 import * as Metaballs from "../docs/metaballs.md";
 import Markup from "preact-markup";
@@ -22,6 +24,11 @@ export const routes = [
     path: "/",
     component: Readme,
     name: "Home",
+  },
+  {
+    path: "/docs/milestone-1",
+    component: Milestone1,
+    name: "Milestone 1",
   },
   {
     path: "/principles",
@@ -67,6 +74,11 @@ export const routes = [
     path: "/translation",
     component: Translation,
     name: "Translation",
+  },
+  {
+    path: "/server-rendering",
+    component: ServerRendering,
+    name: "Server Rendering",
   },
   {
     path: "/palette",

@@ -7,7 +7,7 @@ tags:
   - "guide"
 ---
 
-# Documentation | ControlMe
+# Documentation - ControlMe
 
 ## Link tree
 

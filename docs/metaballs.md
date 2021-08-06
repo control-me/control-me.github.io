@@ -14,6 +14,12 @@ A metaball is simply put, a function, on a grid. The grid is defined by the poin
 
 ## Usage
 
+In the web app, metaballs are used to show a page indicator underneath the image carousel.
+
+![](./docs/indicator.png)
+
+As the user scrolls through the carousel, the page indicator is updated to show the current page and the balls seem to merge together creating a attraction effect, hinting to the user that the carousel component uses scroll snapping.
+
 ```tsx
 import { Metaballs } from "$lib/metaballs";
 
