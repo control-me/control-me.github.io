@@ -1,7 +1,3 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
 main {
   @apply container mx-auto;
 }
@@ -12,12 +8,12 @@ p {
 }
 
 h1 {
-  @apply text-6xl font-medium leading-[5rem];
+  @apply text-6xl font-medium;
   @apply border-b border-gray-300;
 }
 
 h2 {
-  @apply text-4xl font-medium leading-[4rem];
+  @apply text-4xl font-medium;
   @apply border-b border-gray-300;
 }
 
