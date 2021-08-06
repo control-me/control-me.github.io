@@ -64,4 +64,4 @@ Two types of campaigns:
 - campaigns (classic campaigns), own url and QR, without SUBADMIN
 - campaigns with items (practically sub-campaigns), the same url and QR code, each campaign has its own content, with SUBADMIN settings for each campaign (one item = one campaign with SUBADMIN access)
 
-![Structure](./structure.png)
+![Structure](./docs/structure.png)

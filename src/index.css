@@ -2,33 +2,35 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-main {
-  @apply container mx-auto;
-}
-
 /* CSS selecors for text elements */
-p {
-  @apply max-w-prose;
-}
+
 
 h1 {
-  @apply text-6xl font-medium leading-[5rem];
-  @apply border-b border-gray-300;
+  @apply text-4xl font-medium leading-[5rem];
+  @apply border-b border-gray-300 mb-2;
 }
 
 h2 {
-  @apply text-4xl font-medium leading-[4rem];
-  @apply border-b border-gray-300;
+  @apply text-3xl font-medium leading-[4rem];
+  @apply border-b border-gray-300 mb-2;
 }
 
 h3 {
-  @apply text-3xl font-medium;
+  @apply text-2xl font-medium;
 }
 
 ol {
-  @apply list-decimal;
+  @apply list-decimal pl-6;
 }
 
 ul {
-  @apply list-disc;
+  @apply list-disc pl-6;
+}
+
+pre code {
+  @apply rounded-lg my-2;
+}
+
+a {
+  @apply text-brand-700 hover:underline;
 }
