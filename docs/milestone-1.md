@@ -1,3 +1,7 @@
+---
+title: "Docs: Milestone 1 - ControlMe"
+---
+
 # Prototype successful e2e test
 > Due by: August 09, 2021
 

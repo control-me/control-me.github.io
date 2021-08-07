@@ -1,3 +1,7 @@
+---
+title: "Docs: Palette - ControlMe"
+---
+
 # Palette
 
 A color palette is a set of colors that are used to represent a specific range of values.

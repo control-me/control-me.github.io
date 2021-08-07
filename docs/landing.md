@@ -1,3 +1,7 @@
+---
+title: "Docs: Landing - ControlMe"
+---
+
 # Route structure
 
 Based on AirTable and Notion UX. The home page "/" will render the landing page if not authenticated, and it will render the dashboard page if authenticated.

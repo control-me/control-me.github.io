@@ -1,3 +1,7 @@
+---
+title: "Docs: Metaballs - ControlMe"
+---
+
 # Metaballs
 
 Each metaball is defined as a function in n dimensions (e.g., for three dimensions, f(x,y,z); three-dimensional metaballs tend to be most common, with two-dimensional implementations popular as well). A thresholding value is also chosen, to define a solid volume.

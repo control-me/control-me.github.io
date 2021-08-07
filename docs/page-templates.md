@@ -1,3 +1,7 @@
+---
+title: "Docs: Page templates - ControlMe"
+---
+
 # Page Templates
 
 The entrie application UI can be made up of modular components, that are dynamically templated with each other in a serializable format. (list of blocks and attributes). A template is a piece of data that contains a list of blocks and attributes, and is serialized to a string. Format may be markdown, html, or any other format that can be converted to a string. In HTML, blocks are called `div`s, and attributes are called `class`s. In markdown, they are called `header`s and `paragraph`s. Some formats are harder to master than others, the easiest being markdown.

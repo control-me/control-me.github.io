@@ -1,3 +1,7 @@
+---
+title: "Docs: Accounts - ControlMe"
+---
+
 ## Account types
 Summary: we need to have 3 types of accounts:
 1) our company ("superadmin")
