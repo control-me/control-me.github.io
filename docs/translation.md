@@ -2,12 +2,14 @@
 title: "Docs: Translation - ControlMe"
 ---
 
-# Translation guide
+# Translation
 
 > **Edit translations:**
 [https://airtable.com/tblWpIprrPFJQfCv2](https://airtable.com/tblWpIprrPFJQfCv2)
 
-## Introduction
+## Translation guide
+
+### Introduction
 The translation guide is a document that describes how to translate messages.
 This can include:
 - the website, web app, and mobile app
@@ -40,6 +42,7 @@ GET  https://api.airtable.com/v0/app08RrqGCtvShYbL/Translations?pageSize=100&vie
 Output:  ./src/messages/en.ts
 ```
 
+# Manual process
 ## Publishing translations
 1. Create a new branch with your username.
 2. Push the branch to your fork.
@@ -47,7 +50,6 @@ Output:  ./src/messages/en.ts
 4. The pull request will be reviewed and merged.
 5. Translations are built automatically and published to the `dist` folder during the CI process.
 
-# Manual process
 ## Add new language
 1. Open the [`src/messages/en.ts`](../src/messages/en.ts) file in VS Code, which is the source language.
 2. Add a new language (e.g. `fr.ts`) in `src/messages` and add an ES6 export in [`src/messages/index.ts`](./src/messages/index.ts) by copying the `en.ts` source file, or whichever language you want to translate from.
@@ -117,6 +119,10 @@ type MessageNamedArgs = {
 /** Format a message with arguments. */
 function t(id: keyof typeof translations, positional?: any[], named?: MessageNamedArgs): string
 ```
+
+## Message ids popup in VS Code
+
+![](./docs/message-suggestions.png)
 
 ## Named and positional message arguments
 The `t` function accepts named and positional arguments. An argument value can have any type. We cast at the time of evaluation. This allows us to accept rich arguments for user-defined custom formatters. Named args where each argument is given an explicit associative index or name. These can override positional arguments.
