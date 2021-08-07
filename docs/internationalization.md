@@ -11,8 +11,9 @@ title: "Docs: Internationalization - ControlMe"
 ## Translation process
 Transifex, Localizely, Lokalise are great translation tools, but they are not perfect. Either too complex or too simple.
 Each use case is special and requires a different approach. Even though Transifex has a fileless approach, the UI is not very user friendly, and it's meant for large projects.  
-The on-demand translations can be delivered to the application by our API. Native speakers can leave feedback on the translation through our github issue templates. In early stage development, I will use GitHub copilot powered by OpenAI to help me with the translation process in the code editor.  
-To avoid extra complexity, no need to maintain an external database. Instead, we will version it with the code directly, and use a translation tool built into the code editor to perform the translation.
+The on-demand translations can be delivered to the application by our API. Native speakers can leave feedback on the translation through our github issue templates. 
+To avoid extra complexity, we avoid maintaining an external database. Instead, we will version it with the code directly, and use a translation tool built into the code editor to perform the translation. AirTable is merely a tool to edit the data, but then 
+the translations are downloaded from the API directly into code for linting and message id suggestions.
 
 ## Translation strategy
 Initially, only a limited number of languages will be overseed manually in AirTable.
