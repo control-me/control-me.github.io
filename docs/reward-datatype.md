@@ -46,17 +46,18 @@ Can be applied only once for fixed term, can be applied multiple times for perio
 type ExpirationBase = {
   type: "fixed-term" | "periodic";
 }
-interface FixedExpiration extends ExpirationBase = {
+interface FixedExpiration extends ExpirationBase {
   type: "fixed-term";
   date: Date;
 }
-interface PeriodicExpiration extends ExpirationBase = {
+
+interface PeriodicExpiration extends ExpirationBase {
   type: "periodic";
   period: "two-weeks" | "one-month" | "two-months" | "three-months";
 }
 
 type Expiration = FixedExpiration | PeriodicExpiration;
-type Reward = {
+export type Reward = {
   id: string;
   name: string;
   description: string;
