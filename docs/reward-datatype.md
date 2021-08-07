@@ -22,6 +22,25 @@ All settings structure, properties:
   2. Fix term of expiration ("title"). Choose the date from the calendar. 
 - Manual description of the application ("title"). Text field where can be own text ..."step by step" information for application reward, for example: Go to our site, put the code into shopping cart, finish your order. 
 
+## Reward types
+1. Periodic reward
+Each customer will have a fixed period (e.g. two weeks) from the moment the reward was selected to apply the reward. If the period is up, the reward is considered expired and cannot be applied again. In other words, the validity is relative to the date of the reward selection.
+
+2. Fixed reward
+If one customer select reward 7th of August and another customer 30th of August, the validity of the reward is set to fixed until 31st of August. One customer will have validation for three weeks and the other only 1 day. For example, a special offer (discount) with fixed date of validity. The validity is fixed regardless of the date of the reward selection.
+
+## Rewards process
+End to end process for rewards:
+
+1. Create reward
+2. Select from list and attach to campaign
+3. Publish campaign, print and scan code
+4. Submit response
+5. Claim reward button, add to user rewards list
+6. Apply reward (slider or code), move from active rewards list tab to "applied" list tab. 
+
+Can be applied only once for fixed term, can be applied multiple times for periodic rewards.
+
 ## Typescript
 ```typescript
 type ExpirationBase = {
