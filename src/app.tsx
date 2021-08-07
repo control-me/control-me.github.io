@@ -26,7 +26,7 @@ export const routes = [
     name: "Home",
   },
   {
-    path: "/docs/milestone-1",
+    path: "/milestone-1",
     component: Milestone1,
     name: "Milestone 1",
   },

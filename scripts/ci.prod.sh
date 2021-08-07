@@ -16,6 +16,9 @@ cp -r docs dist
 
 # navigate into the build output directory
 cd dist
+# SPA routing for github pages
+mv index.html 404.html
+# init repo and force push
 git init
 
 # if you are deploying to a custom domain
