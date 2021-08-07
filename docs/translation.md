@@ -29,7 +29,7 @@ git clone git@github.com:control-me/web-app.git
 # install dependencies
 cd web-app && npm i
 
-# pull the latest changes from AirTable for <language>
+# pull the latest changes from AirTable for <language> (run without arguments for all languages)
 npm run locale:pull -- en
 ```
 Output:
