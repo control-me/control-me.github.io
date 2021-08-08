@@ -42,6 +42,23 @@ GET  https://api.airtable.com/v0/app08RrqGCtvShYbL/Translations?pageSize=100&vie
 Output:  ./src/messages/en.ts
 ```
 
+## New messages
+The development workflow is intented for English as the source language. Change the source language to the language you want to develop the web app in: `$lib/locale/format.tsx`.
+```ts
+// #L24 - Import the English messages
+import englishMessages from "../../messages/en";
+
+// #L135 - Lookup message from the English messages for missing translations
+const bundleEn = (messages as any)["en"];
+```
+
+Open Airtable, `Translations`, `All`, and add a new record at the bottom of the table.
+Select an existing message, or create a new one following the format for naming:
+```
+section-name.message-name.message-type.tags
+```
+Lower case alphanumeric characters, periods, and dashes are allowed. This is because the message ids are used for linting in the code editor, and they are easy to search thourgh by pressing the "." character while the cursor is between the quotes, which will trigger a popup. Run ```npm run locale:pull -- en``` to pull the latest changes from Airtable for the Source language (e.g. English).
+
 # Manual process
 ## Publishing translations
 1. Create a new branch with your username.
