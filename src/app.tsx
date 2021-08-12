@@ -12,6 +12,8 @@ import * as PageTemplates from "../docs/page-templates.md";
 import * as Internationalization from "../docs/internationalization.md";
 import * as Translation from "../docs/translation.md";
 import * as ServerRendering from "../docs/server-rendering.md";
+import * as E2ETesting from "../docs/e2e-testing.md";
+import * as CodeQuality from "../docs/code-quality.md";
 import * as Palette from "../docs/palette.md";
 import * as Metaballs from "../docs/metaballs.md";
 import Markup from "preact-markup";
@@ -79,6 +81,16 @@ export const routes = [
     path: "/server-rendering",
     component: ServerRendering,
     name: "Server Rendering",
+  },
+  {
+    path: "/e2e-testing",
+    component: E2ETesting,
+    name: "E2E Testing",
+  },
+  {
+    path: "/code-quality",
+    component: CodeQuality,
+    name: "Code Quality",
   },
   {
     path: "/palette",
