@@ -6,6 +6,7 @@ import * as Landing from "../docs/landing.md";
 import * as Readme from "../docs/readme.md";
 import * as Rewards from "../docs/reward-datatype.md";
 import * as Questions from "../docs/question-datatype.md";
+import * as Gamification from "../docs/gamification.md";
 import * as Principles from "../docs/principles.md";
 import * as DesignSystem from "../docs/design-system.md";
 import * as PageTemplates from "../docs/page-templates.md";
@@ -47,6 +48,11 @@ export const routes = [
     path: "/rewards",
     component: Rewards,
     name: "Rewards",
+  },
+  {
+    path: "/gamification",
+    component: Gamification,
+    name: "Gamification",
   },
   {
     path: "/design-system",
