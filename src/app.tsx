@@ -16,6 +16,7 @@ import * as E2ETesting from "../docs/e2e-testing.md";
 import * as CodeQuality from "../docs/code-quality.md";
 import * as Palette from "../docs/palette.md";
 import * as Metaballs from "../docs/metaballs.md";
+import * as AppliedML from "../docs/applied-ml.md";
 import Markup from "preact-markup";
 import Logo from "./logo";
 
@@ -101,6 +102,11 @@ export const routes = [
     path: "/metaballs",
     component: Metaballs,
     name: "Metaballs",
+  },
+  {
+    path: "/applied-ml",
+    component: AppliedML,
+    name: "Applied Machine Learning",
   },
 ];
 
