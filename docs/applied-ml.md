@@ -1,5 +1,5 @@
 ---
-title: Docs: Applied Machine Learning - ControlMe
+title: "Docs: Applied Machine Learning - ControlMe"
 ---
 
 # Applied Machine Learning
