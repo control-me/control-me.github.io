@@ -1,7 +1,7 @@
 import { useEffect } from "preact/hooks";
 import Router from "preact-router";
 import * as Milestone1 from "../docs/milestone-1.md";
-import * as Accounts from "../docs/accounts.md";
+import * as Profile from "../docs/profile.md";
 import * as Landing from "../docs/landing.md";
 import * as Readme from "../docs/readme.md";
 import * as Rewards from "../docs/reward-datatype.md";
@@ -12,6 +12,7 @@ import * as DesignSystem from "../docs/design-system.md";
 import * as PageTemplates from "../docs/page-templates.md";
 import * as Internationalization from "../docs/internationalization.md";
 import * as Translation from "../docs/translation.md";
+import * as Enterprise from "../docs/enterprise.md";
 import * as ServerRendering from "../docs/server-rendering.md";
 import * as E2ETesting from "../docs/e2e-testing.md";
 import * as CodeQuality from "../docs/code-quality.md";
@@ -65,10 +66,11 @@ export const routes = [
     name: "Page Templates",
   },
   {
-    path: "/accounts",
-    component: Accounts,
+    path: "/profile",
+    component: Profile,
     name: "Accounts",
   },
+
   {
     path: "/landing",
     component: Landing,
@@ -83,6 +85,11 @@ export const routes = [
     path: "/translation",
     component: Translation,
     name: "Translation",
+  },
+  {
+    path: "/enterprise",
+    component: Enterprise,
+    name: "Enterprise",
   },
   {
     path: "/server-rendering",
