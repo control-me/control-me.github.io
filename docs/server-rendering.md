@@ -28,6 +28,12 @@ npm run deploy:hosting
 View Vite Plugin SSR docs at:  
 https://vite-plugin-ssr.com/
 
+## Applications
+
+Server side rendering means that the meta tags can be added based on dynamic data from our database, and the page HTML is rendered by a Firebase Function. This makes it search engine friendly, so if for example if a company wants to promote their campaign link on social media platforms, they can do so and the link preview will work nicely.
+
+Link preview may be checked on the [Google Search Console](https://search.google.com/search-console) and https://metatags.io/ to see if the link preview is working.
+
 ## Common issues
 
 ```

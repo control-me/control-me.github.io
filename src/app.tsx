@@ -2,6 +2,7 @@ import { useEffect } from "preact/hooks";
 import Router from "preact-router";
 import * as Milestone1 from "../docs/milestone-1.md";
 import * as Profile from "../docs/profile.md";
+import * as DataCollection from "../docs/data-collection.md";
 import * as Landing from "../docs/landing.md";
 import * as Readme from "../docs/readme.md";
 import * as Rewards from "../docs/reward-datatype.md";
@@ -18,6 +19,7 @@ import * as E2ETesting from "../docs/e2e-testing.md";
 import * as CodeQuality from "../docs/code-quality.md";
 import * as Palette from "../docs/palette.md";
 import * as Metaballs from "../docs/metaballs.md";
+import * as Curvature from "../docs/curvature.md";
 import * as AppliedML from "../docs/applied-ml.md";
 import Markup from "preact-markup";
 import Logo from "./logo";
@@ -70,7 +72,11 @@ export const routes = [
     component: Profile,
     name: "Accounts",
   },
-
+  {
+    path: "/data-collection",
+    component: DataCollection,
+    name: "Data Collection",
+  },
   {
     path: "/landing",
     component: Landing,
@@ -115,6 +121,11 @@ export const routes = [
     path: "/metaballs",
     component: Metaballs,
     name: "Metaballs",
+  },
+  {
+    path: "/curvature",
+    component: Curvature,
+    name: "Continuous Curvature",
   },
   {
     path: "/applied-ml",
