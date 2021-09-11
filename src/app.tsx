@@ -15,6 +15,7 @@ import * as Internationalization from "../docs/internationalization.md";
 import * as Translation from "../docs/translation.md";
 import * as Enterprise from "../docs/enterprise.md";
 import * as ServerRendering from "../docs/server-rendering.md";
+import * as CommonIssues from "../docs/common-issues.md";
 import * as E2ETesting from "../docs/e2e-testing.md";
 import * as CodeQuality from "../docs/code-quality.md";
 import * as Palette from "../docs/palette.md";
@@ -101,6 +102,11 @@ export const routes = [
     path: "/server-rendering",
     component: ServerRendering,
     name: "Server Rendering",
+  },
+  {
+    path: "/common-issues",
+    component: CommonIssues,
+    name: "Common Issues",
   },
   {
     path: "/e2e-testing",
