@@ -56,17 +56,60 @@ There are many ways to construct the web application. The following are some exa
 
 ## Storeon global state
 Cleanup state management in line with best practices in Storeon docs.
-```js
+```ts
 store.on("questions", (state, event) => set(state, "questions", event));
 ```
 
-Remove spread operator in favor of lodash "set" function "path" parameter.
-```js
+Remove spread operator in favor of lodash "set" and "merge" functions.
+```ts
 // bad
 store.dispatch("campaigns.set", set(state.campaigns, event.id, { ...campaign, status: "published" }));
 
 // good
 store.dispatch("campaigns.set", set(state.campaigns, `${event.id}.status`, "published"));
+
+// for multiple properties
+// bad
+store.dispatch("campaigns.set", set(state.campaigns, event.id, { ...campaign, status: "published", name: "New Campaign" }));
+
+// good
+store.dispatch("campaigns.set", merge(state.campaigns, { [event.id]: { status: "published", name: "New Campaign" } }));
+```
+
+The `pageProps` is a special entry in the store which is data that comes from SSR. It is not part of the state, and should not be used at the component level. Rather, it is always reduced into the store at the `@init` hook.
+
+```tsx
+// BAD
+// in the component
+const {dispatch, pageProps} = useStore("pageProps");
+// here we cannot assume the type of the pageProps unless it's on a specific page,
+// or unless we add an explicit check for pageProps.data.type
+return <p>{pageProps.data.reward.name}</p>;
+
+// GOOD
+// in the store module
+export let module: StoreonModule<S, E> = (store) => {
+  store.on("@init", (state) => {
+    // reduce data from SSR
+    if (state.pageProps && state.pageProps.data) {
+      const type = state.pageProps.data.type;
+      // switch on data type relevant to this store module
+      if (type === "reward-view") {
+        const r = state.pageProps.data.reward;
+        return merge(state, {
+          rewards: {
+            [r.id]: r,
+          }
+          //... other state from pageProps of type "reward-view"
+        });
+      }
+    }
+  });
+};
+// in the component
+const {dispatch, rewards} = useStore("rewards");
+const reward = rewards[id];
+return <p>{reward.name}</p>;
 ```
 
 ## `classes` helper function
