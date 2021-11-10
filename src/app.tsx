@@ -11,6 +11,7 @@ import * as Gamification from "../docs/gamification.md";
 import * as Principles from "../docs/principles.md";
 import * as DesignSystem from "../docs/design-system.md";
 import * as PageTemplates from "../docs/page-templates.md";
+import * as CampaignPublishing from "../docs/campaign-publishing.md";
 import * as Internationalization from "../docs/internationalization.md";
 import * as Translation from "../docs/translation.md";
 import * as Enterprise from "../docs/enterprise.md";
@@ -67,6 +68,11 @@ export const routes = [
     path: "/page-templates",
     component: PageTemplates,
     name: "Page Templates",
+  },
+  {
+    path: "/campaign-publishing",
+    component: CampaignPublishing,
+    name: "Campaign Publishing",
   },
   {
     path: "/profile",
