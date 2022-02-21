@@ -23,6 +23,7 @@ import * as Palette from "../docs/palette.md";
 import * as Metaballs from "../docs/metaballs.md";
 import * as Curvature from "../docs/curvature.md";
 import * as AppliedML from "../docs/applied-ml.md";
+import * as Dependencies from "../docs/dependencies.md";
 import Markup from "preact-markup";
 import Logo from "./logo";
 
@@ -35,9 +36,9 @@ export const routes = [
     name: "Home",
   },
   {
-    path: "/milestone-1",
-    component: Milestone1,
-    name: "Milestone 1",
+    path: "/dependencies",
+    component: Dependencies,
+    name: "Depdendencies",
   },
   {
     path: "/principles",
@@ -85,11 +86,6 @@ export const routes = [
     name: "Data Collection",
   },
   {
-    path: "/landing",
-    component: Landing,
-    name: "Landing",
-  },
-  {
     path: "/internationalization",
     component: Internationalization,
     name: "Internationalization",
@@ -115,6 +111,11 @@ export const routes = [
     name: "Common Issues",
   },
   {
+    path: "/milestone-1",
+    component: Milestone1,
+    name: "Milestone 1",
+  },
+  {
     path: "/e2e-testing",
     component: E2ETesting,
     name: "E2E Testing",
@@ -123,6 +124,11 @@ export const routes = [
     path: "/code-quality",
     component: CodeQuality,
     name: "Code Quality",
+  },
+  {
+    path: "/landing",
+    component: Landing,
+    name: "Landing",
   },
   {
     path: "/palette",

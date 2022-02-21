@@ -11,8 +11,8 @@ Commonly referred to as `components` or `markup`. A block is a piece of data tha
 Modular architecture is a good way to break up the UI into smaller pieces, so that the UI can be changed without having to modify the underlying component library.
 This is a rather important way of thinking about the application. Everything is a block, and every block has a set of attributes.
 Blocks can be nested, depending on the structure of the UI. Pages are the most basic block, and they are the only block that can be serialized and published to a URL on the web.
-Clienside logic such as interactivity are pushed to a package `@controlme/ui-controls` that is loaded as a dependency during the build process of a static site. These controls (a.k.a. components) are then used to dynamically render the UI.
-Parse errors and validation errors are reported during the build process, and interactivity is pushed to the client as a set of controls from a package `@controlme/ui-controls` and other third party packages, UI libraries, etc.
+Clienside logic such as interactivity are pushed to a package `@packages/lib` that is loaded as a dependency during the build process of a static site. These controls (a.k.a. components) are then used to dynamically render the UI.
+Parse errors and validation errors are reported during the build process, and interactivity is pushed to the client as a set of controls from a package `@packages/lib` and other third party packages, UI libraries, etc.
 
 ## Forms
 
