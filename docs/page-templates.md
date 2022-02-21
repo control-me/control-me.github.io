@@ -1,5 +1,5 @@
 ---
-title: "Docs: Page templates - ControlMe"
+title: "Docs: Templates - ControlMe"
 ---
 
 # Page Templates
@@ -76,3 +76,14 @@ Automatically generated favicon / app icon
 ```html
 <meta name="theme-color" content="#4285f4">
 ```
+
+## Campaign templates
+
+Campaign templates are templates that are shared with other users. The users may then copy it and customize it (this is called a fork). The fork is instantly saved to the database under the user's account.
+
+This is essentially the same as duplicating a campaign's data and copying it to a new user.
+The owner or the editor roles allow for chaning the original campaign's data. This is not to be confused with campaign templates as it is a separate feature.
+
+Serves as an image and icon gallery.
+Templates have a list of tags that can be used to filter them, and display them in a gallery.
+Campaign template tags are also a way or organizing a collection of campaigns. 
