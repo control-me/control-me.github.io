@@ -28,7 +28,8 @@ Contrast is calculated by calculating the difference between the lightness of th
 Text legibility is maintained with a sufficient contrast ratio of the text color and the background color. `WCAG 2.0 AA` is used to calculate the contrast ratio, which is `4.5:1` for small text and `3.0:1` for large text.
 
 ## Sources
- - [Adobe Color Contrast Analyzer](https://color.adobe.com/create/color-contrast-analyzer)
- - [WCAG 2.0 Contrast Ratio](https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast)
+ - [The Science of Color & Design - James O'Leary](https://material.io/blog/science-of-color-design)
  - [Material Design Inline Color Tool](https://material.io/inline-tools/color/)
  - [Material Design Color Tool](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=ffffff)
+ - [Adobe Color Contrast Analyzer](https://color.adobe.com/create/color-contrast-analyzer)
+ - [WCAG 2.0 Contrast Ratio](https://observablehq.com/@mbostock/wcag-contrast-ratio)

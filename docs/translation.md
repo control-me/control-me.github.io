@@ -5,7 +5,7 @@ title: "Docs: Translation - ControlMe"
 # Translation
 
 > **Edit translations:**
-[https://airtable.com/tblWpIprrPFJQfCv2](https://airtable.com/tblWpIprrPFJQfCv2)
+[https://airtable.com/tblTCLFtdNO4U1Fvw](https://airtable.com/tblTCLFtdNO4U1Fvw)
 
 ## Translation guide
 
